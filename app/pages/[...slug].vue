@@ -16,7 +16,7 @@ const { data: page, error, execute } = await useAsyncData('page-' + route.path, 
       <h2>Error</h2>
       <p>Message: {{ error.message }}</p>
       <p>Data: {{ error.data }}</p>
-      <p>Cause: { error.cause }}</p>
+      <p>Cause: {{ error.cause }}</p>
       <button @click="execute()">Fetch on client side</button>
     </div>
   </div>
